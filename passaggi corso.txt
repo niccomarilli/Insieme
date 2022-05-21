@@ -1,0 +1,26 @@
+1) risistemare un pò i dati
+2) eliminare colonne inutili
+3) fare get_dummies se necessario
+4) portare tutto a numerico
+5) eliminare tutti i nulli e anomalie
+6) dividere target 
+7) normalizzare  df=df.apply(lambda x: np.log(x+1))
+8) guardare la correlazione ed eliminare le colonne con correlazione >80
+9) fare PCA di tutte le colonne
+10) scegliere i PCA (rimare almeno con 80% dei dati)
+11) disegnare ed elimanre eventualmen le righe bianche
+12) calcolare las proyecciones
+13) creare la X  X=proyecciones[pcas[:19]]   19= numero di PCA scelti
+14) assegnare al y a target   target=df['lesividad']    y=target
+15) se è di classificazione i valori di target non devono essere numeri
+16) divisione X train X test y train y test 
+17) LC = LazyRegressor o LC = LazyClassifier
+18) lanciamo il modello per esempio RandomForest
+19) aggiustiamo iperparatri, eventualmente
+20) lanciamo il modello finale
+
+
+
+
+
+
